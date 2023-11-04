@@ -9,14 +9,14 @@ import (
 )
 
 func init() {
-	functions.HTTP("InternMonitoring", internMonitoringDeleteMagang)
+	functions.HTTP("InternMonitoring", internMonitoring_SignUpMitra)
 }
 
-func internMonitoringDeleteMagang(w http.ResponseWriter, r *http.Request) {
+func internMonitoring_SignUpMitra(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "https://intern-monitoring.github.io")
-		w.Header().Set("Access-Control-Allow-Methods", "DELETE")
+		w.Header().Set("Access-Control-Allow-Methods", "POST")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type,Authorization,Token")
 		w.Header().Set("Access-Control-Max-Age", "3600")
 		w.WriteHeader(http.StatusNoContent)
@@ -24,6 +24,6 @@ func internMonitoringDeleteMagang(w http.ResponseWriter, r *http.Request) {
 	}
 	// Set CORS headers for the main request.
 	w.Header().Set("Access-Control-Allow-Origin", "https://intern-monitoring.github.io")
-	fmt.Fprintf(w, module.GCFHandlerDeleteMagang("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
+	fmt.Fprintf(w, module.GCFHandlerSignUpMitra("MONGOSTRING", "db_intermoni", r))
 
 }

@@ -9,10 +9,10 @@ import (
 )
 
 func init() {
-	functions.HTTP("InternMonitoring", internMonitoringLogin)
+	functions.HTTP("InternMonitoring", internMonitoring_Login)
 }
 
-func internMonitoringLogin(w http.ResponseWriter, r *http.Request) {
+func internMonitoring_Login(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "https://intern-monitoring.github.io")

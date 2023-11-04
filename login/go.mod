@@ -4,7 +4,7 @@ go 1.21.3
 
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
-	github.com/intern-monitoring/backend-intermoni v0.0.3
+	github.com/intern-monitoring/backend-intermoni v0.0.4
 )
 
 require (
