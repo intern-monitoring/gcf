@@ -801,10 +801,8 @@ github.com/hashicorp/golang-lru v0.5.1/go.mod h1:/m3WP610KZHVQ1SGc6re/UDhFvYD7pJ
 github.com/iancoleman/strcase v0.2.0/go.mod h1:iwCmte+B7n89clKwxIoIXy/HfoL7AsD47ZCWhYzw7ho=
 github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
-github.com/intern-monitoring/backend-intermoni v0.0.5 h1:fgAahUVb+iTB78FQyLhYGjpMt2jzbsgmtR+urNQKyuk=
-github.com/intern-monitoring/backend-intermoni v0.0.5/go.mod h1:222N+oubWJbn7jhSN2zO6VO1/4bpDZ8vKbLcxWVGFNA=
-github.com/intern-monitoring/backend-intermoni v0.0.6 h1:2rId6npI+hXgRsC6WezxKgpD3Oz/GTESD8saHoJJLGo=
-github.com/intern-monitoring/backend-intermoni v0.0.6/go.mod h1:222N+oubWJbn7jhSN2zO6VO1/4bpDZ8vKbLcxWVGFNA=
+github.com/intern-monitoring/backend-intermoni v0.0.8 h1:j3wV7mH/7+ZI7lgtO11cYG7oxAI4plli4L6UW0TOKi8=
+github.com/intern-monitoring/backend-intermoni v0.0.8/go.mod h1:222N+oubWJbn7jhSN2zO6VO1/4bpDZ8vKbLcxWVGFNA=
 github.com/json-iterator/go v1.1.10 h1:Kz6Cvnvv2wGdaG/V8yMvfkmNiXq9Ya2KUv4rouJJr68=
 github.com/json-iterator/go v1.1.10/go.mod h1:KdQUCv79m/52Kvf8AW2vK1V8akMuk1QjK/uOdHXbAo4=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
