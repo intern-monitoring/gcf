@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
-	"github.com/intern-monitoring/backend-intermoni/module"
+	"github.com/intern-monitoring/backend-intermoni/signup_mahasiswa"
 )
 
 func init() {
@@ -24,6 +24,6 @@ func internMonitoring_SignUpMahasiswa(w http.ResponseWriter, r *http.Request) {
 	}
 	// Set CORS headers for the main request.
 	w.Header().Set("Access-Control-Allow-Origin", "https://intern-monitoring.github.io")
-	fmt.Fprintf(w, module.GCFHandlerSignUpMahasiswa("MONGOSTRING", "db_intermoni", r))
+	fmt.Fprintf(w, signup_mahasiswa.Post("MONGOSTRING", "db_intermoni", r))
 
 }

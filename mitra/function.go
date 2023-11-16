@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
-	"github.com/intern-monitoring/backend-intermoni/module"
+	"github.com/intern-monitoring/backend-intermoni/mitra"
 )
 
 func init() {
@@ -23,9 +23,9 @@ func internMonitoring_Mitra(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if r.Method == http.MethodPut {
-		fmt.Fprintf(w, module.GCFHandlerUpdateMitra("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
+		fmt.Fprintf(w, mitra.Put("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
 		return
 	}
 	// Set CORS headers for the main request.
-	fmt.Fprintf(w, module.GCFHandlerGetMitraFromID("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
+	fmt.Fprintf(w, mitra.Get("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
 }

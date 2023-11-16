@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
-	"github.com/intern-monitoring/backend-intermoni/module"
+	"github.com/intern-monitoring/backend-intermoni/user"
 )
 
 func init() {
@@ -22,10 +22,6 @@ func internMonitoring_User(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusNoContent)
 		return
 	}
-	if r.Method == http.MethodPut {
-		fmt.Fprintf(w, module.GCFHandlerUpdateUser("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
-		return
-	}
 	// Set CORS headers for the main request.
-	fmt.Fprintf(w, module.GCFHandlerGetUser("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
+	fmt.Fprintf(w, user.Get("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
 }
