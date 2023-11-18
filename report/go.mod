@@ -4,13 +4,12 @@ go 1.21.3
 
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
-	github.com/intern-monitoring/backend-intermoni v0.0.9
+	github.com/intern-monitoring/backend-intermoni v0.1.1
 )
 
 require (
 	aidanwoods.dev/go-paseto v1.5.0 // indirect
 	aidanwoods.dev/go-result v0.1.0 // indirect
-	github.com/badoux/checkmail v1.2.1 // indirect
 	github.com/cloudevents/sdk-go/v2 v2.14.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/uuid v1.3.0 // indirect
