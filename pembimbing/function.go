@@ -25,6 +25,11 @@ func internMonitoring_Pembimbing(w http.ResponseWriter, r *http.Request) {
 	}
 	if r.Method == http.MethodPost {
 		fmt.Fprintf(w, pembimbing.Post("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
+		return
+	}
+	if r.Method == http.MethodPut {
+		fmt.Fprintf(w, pembimbing.Put("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
+		return
 	}
 	// Set CORS headers for the main request.
 	fmt.Fprintf(w, pembimbing.Get("PASETOPUBLICKEY", "MONGOSTRING", "db_intermoni", r))
